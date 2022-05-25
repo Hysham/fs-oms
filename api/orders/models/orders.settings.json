@@ -33,22 +33,19 @@
     "status": {
       "type": "string"
     },
-    "assigned_to": {
-      "type": "string"
-    },
-    "requested_date": {
-      "type": "string"
-    },
-    "assigned_date": {
-      "type": "string"
-    },
-    "completed_date": {
-      "type": "string"
-    },
-    "users_permissions_user": {
+    "assigned_user": {
       "plugin": "users-permissions",
       "model": "user",
       "via": "orders"
+    },
+    "requested_date": {
+      "type": "date"
+    },
+    "assigned_date": {
+      "type": "date"
+    },
+    "completed_date": {
+      "type": "date"
     }
   }
 }
