@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "areas",
+  "info": {
+    "name": "Areas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "area": {
+      "type": "string"
+    },
+    "district": {
+      "model": "districts",
+      "via": "areas"
+    }
+  }
+}

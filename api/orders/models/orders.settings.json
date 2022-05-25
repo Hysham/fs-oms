@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Orders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "mobile_number": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "assigned_to": {
+      "type": "string"
+    },
+    "requested_date": {
+      "type": "string"
+    },
+    "assigned_date": {
+      "type": "string"
+    },
+    "completed_date": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "orders"
+    }
+  }
+}
