@@ -16,8 +16,8 @@
       "type": "string"
     },
     "district": {
-      "model": "districts",
-      "via": "areas"
+      "via": "areas",
+      "model": "districts"
     }
   }
 }

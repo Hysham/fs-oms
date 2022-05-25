@@ -1,0 +1,894 @@
+{
+    "Service_Area": [
+        {
+            "id": "1",
+            "Service area": "Colombo North",
+            "district": "1"
+        },
+        {
+            "id": "2",
+            "Service area": "Colombo Central",
+            "district": "1"
+        },
+        {
+            "id": "3",
+            "Service area": "Borella",
+            "district": "1"
+        },
+        {
+            "id": "4",
+            "Service area": "Colombo East",
+            "district": "1"
+        },
+        {
+            "id": "5",
+            "Service area": "Colombo West",
+            "district": "1"
+        },
+        {
+            "id": "6",
+            "Service area": "Dehiwala",
+            "district": "1"
+        },
+        {
+            "id": "7",
+            "Service area": "Ratmalana",
+            "district": "1"
+        },
+        {
+            "id": "8",
+            "Service area": "Kolonnawa",
+            "district": "1"
+        },
+        {
+            "id": "9",
+            "Service area": "Kotte",
+            "district": "1"
+        },
+        {
+            "id": "10",
+            "Service area": "Kaduwela",
+            "district": "1"
+        },
+        {
+            "id": "11",
+            "Service area": "Awissawella",
+            "district": "1"
+        },
+        {
+            "id": "12",
+            "Service area": "Homagama",
+            "district": "1"
+        },
+        {
+            "id": "13",
+            "Service area": "Maharagama",
+            "district": "1"
+        },
+        {
+            "id": "14",
+            "Service area": "Kesbewa",
+            "district": "1"
+        },
+        {
+            "id": "15",
+            "Service area": "Moratuwa",
+            "district": "1"
+        },
+        {
+            "id": "16",
+            "Service area": "Wattala",
+            "district": "2"
+        },
+        {
+            "id": "17",
+            "Service area": "Negombo",
+            "district": "2"
+        },
+        {
+            "id": "18",
+            "Service area": "Katana",
+            "district": "2"
+        },
+        {
+            "id": "19",
+            "Service area": "Divulapitiya",
+            "district": "2"
+        },
+        {
+            "id": "20",
+            "Service area": "Meerigama",
+            "district": "2"
+        },
+        {
+            "id": "21",
+            "Service area": "Minuwangoda",
+            "district": "2"
+        },
+        {
+            "id": "22",
+            "Service area": "Attanagalla",
+            "district": "2"
+        },
+        {
+            "id": "23",
+            "Service area": "Gampaha",
+            "district": "2"
+        },
+        {
+            "id": "24",
+            "Service area": "Ja-Ela",
+            "district": "2"
+        },
+        {
+            "id": "25",
+            "Service area": "Mahara",
+            "district": "2"
+        },
+        {
+            "id": "26",
+            "Service area": "Dompe",
+            "district": "2"
+        },
+        {
+            "id": "27",
+            "Service area": "Biyagama",
+            "district": "2"
+        },
+        {
+            "id": "28",
+            "Service area": "Kelaniya",
+            "district": "2"
+        },
+        {
+            "id": "29",
+            "Service area": "Panadura",
+            "district": "3"
+        },
+        {
+            "id": "30",
+            "Service area": "Bandaragama",
+            "district": "3"
+        },
+        {
+            "id": "31",
+            "Service area": "Horana",
+            "district": "3"
+        },
+        {
+            "id": "32",
+            "Service area": "Bulathsinhala",
+            "district": "3"
+        },
+        {
+            "id": "33",
+            "Service area": "Mathugama",
+            "district": "3"
+        },
+        {
+            "id": "34",
+            "Service area": "Kalutara",
+            "district": "3"
+        },
+        {
+            "id": "35",
+            "Service area": "Beruwala",
+            "district": "3"
+        },
+        {
+            "id": "36",
+            "Service area": "Agalawatta",
+            "district": "3"
+        },
+        {
+            "id": "37",
+            "Service area": "Galagedara",
+            "district": "4"
+        },
+        {
+            "id": "38",
+            "Service area": "Harispaththuwa",
+            "district": "4"
+        },
+        {
+            "id": "39",
+            "Service area": "Pathadumbara",
+            "district": "4"
+        },
+        {
+            "id": "40",
+            "Service area": "Udadumbara",
+            "district": "4"
+        },
+        {
+            "id": "41",
+            "Service area": "Theldeniya",
+            "district": "4"
+        },
+        {
+            "id": "42",
+            "Service area": "Kundasale",
+            "district": "4"
+        },
+        {
+            "id": "43",
+            "Service area": "Hewaheta",
+            "district": "4"
+        },
+        {
+            "id": "44",
+            "Service area": "Senkadagala",
+            "district": "4"
+        },
+        {
+            "id": "45",
+            "Service area": "Mahanuwara",
+            "district": "4"
+        },
+        {
+            "id": "46",
+            "Service area": "Yatinuwara",
+            "district": "4"
+        },
+        {
+            "id": "47",
+            "Service area": "Udunuwara",
+            "district": "4"
+        },
+        {
+            "id": "48",
+            "Service area": "Gampola",
+            "district": "4"
+        },
+        {
+            "id": "49",
+            "Service area": "Nawalapitiya",
+            "district": "4"
+        },
+        {
+            "id": "50",
+            "Service area": "Dambulla",
+            "district": "5"
+        },
+        {
+            "id": "51",
+            "Service area": "Laggala",
+            "district": "5"
+        },
+        {
+            "id": "52",
+            "Service area": "Matale",
+            "district": "5"
+        },
+        {
+            "id": "53",
+            "Service area": "Raththota",
+            "district": "5"
+        },
+        {
+            "id": "54",
+            "Service area": "Nuwara-Eliya",
+            "district": "6"
+        },
+        {
+            "id": "55",
+            "Service area": "Kotmale",
+            "district": "6"
+        },
+        {
+            "id": "56",
+            "Service area": "Hanguranketha",
+            "district": "6"
+        },
+        {
+            "id": "57",
+            "Service area": "Walapane",
+            "district": "6"
+        },
+        {
+            "id": "58",
+            "Service area": "Balapitiya",
+            "district": "7"
+        },
+        {
+            "id": "59",
+            "Service area": "Ambalangoda",
+            "district": "7"
+        },
+        {
+            "id": "60",
+            "Service area": "Karandeniya",
+            "district": "7"
+        },
+        {
+            "id": "61",
+            "Service area": "Bentara-Elpitiya",
+            "district": "7"
+        },
+        {
+            "id": "62",
+            "Service area": "Hiniduma",
+            "district": "7"
+        },
+        {
+            "id": "63",
+            "Service area": "Baddegama",
+            "district": "7"
+        },
+        {
+            "id": "64",
+            "Service area": "Rathgama",
+            "district": "7"
+        },
+        {
+            "id": "65",
+            "Service area": "Galle",
+            "district": "7"
+        },
+        {
+            "id": "66",
+            "Service area": "Akmeemana",
+            "district": "7"
+        },
+        {
+            "id": "67",
+            "Service area": "Habaraduwa",
+            "district": "7"
+        },
+        {
+            "id": "68",
+            "Service area": "Deniyaya",
+            "district": "8"
+        },
+        {
+            "id": "69",
+            "Service area": "Hakmana",
+            "district": "8"
+        },
+        {
+            "id": "70",
+            "Service area": "Akuressa",
+            "district": "8"
+        },
+        {
+            "id": "71",
+            "Service area": "Kamburupitiya",
+            "district": "8"
+        },
+        {
+            "id": "72",
+            "Service area": "Devinuwara",
+            "district": "8"
+        },
+        {
+            "id": "73",
+            "Service area": "Matara",
+            "district": "8"
+        },
+        {
+            "id": "74",
+            "Service area": "Weligama",
+            "district": "8"
+        },
+        {
+            "id": "75",
+            "Service area": "Mulkirigala",
+            "district": "9"
+        },
+        {
+            "id": "76",
+            "Service area": "Beliatta",
+            "district": "9"
+        },
+        {
+            "id": "77",
+            "Service area": "Tangalle",
+            "district": "9"
+        },
+        {
+            "id": "78",
+            "Service area": "Thissamaharamaya",
+            "district": "9"
+        },
+        {
+            "id": "79",
+            "Service area": "Kayts",
+            "district": "10"
+        },
+        {
+            "id": "80",
+            "Service area": "Waddukkoddai",
+            "district": "10"
+        },
+        {
+            "id": "81",
+            "Service area": "Kankasanthurai",
+            "district": "10"
+        },
+        {
+            "id": "82",
+            "Service area": "Manipay",
+            "district": "10"
+        },
+        {
+            "id": "83",
+            "Service area": "Kopay",
+            "district": "10"
+        },
+        {
+            "id": "84",
+            "Service area": "Uduppidi",
+            "district": "10"
+        },
+        {
+            "id": "85",
+            "Service area": "Point Pedro",
+            "district": "10"
+        },
+        {
+            "id": "86",
+            "Service area": "Chawakachcheri",
+            "district": "10"
+        },
+        {
+            "id": "87",
+            "Service area": "Nallur",
+            "district": "10"
+        },
+        {
+            "id": "88",
+            "Service area": "Jaffna",
+            "district": "10"
+        },
+        {
+            "id": "89",
+            "Service area": "Kilinochchi",
+            "district": "10"
+        },
+        {
+            "id": "90",
+            "Service area": "Mannar",
+            "district": "11"
+        },
+        {
+            "id": "91",
+            "Service area": "Vavuniya",
+            "district": "11"
+        },
+        {
+            "id": "92",
+            "Service area": "Mullaitivu",
+            "district": "11"
+        },
+        {
+            "id": "93",
+            "Service area": "Kalkuda",
+            "district": "12"
+        },
+        {
+            "id": "94",
+            "Service area": "Batticaloa",
+            "district": "12"
+        },
+        {
+            "id": "95",
+            "Service area": "Paddiruppu",
+            "district": "12"
+        },
+        {
+            "id": "96",
+            "Service area": "Ampara",
+            "district": "13"
+        },
+        {
+            "id": "97",
+            "Service area": "Samanthurai",
+            "district": "13"
+        },
+        {
+            "id": "98",
+            "Service area": "Kalmunai",
+            "district": "13"
+        },
+        {
+            "id": "99",
+            "Service area": "Pothuvil",
+            "district": "13"
+        },
+        {
+            "id": "100",
+            "Service area": "Seruwil",
+            "district": "14"
+        },
+        {
+            "id": "101",
+            "Service area": "Trincomalee",
+            "district": "14"
+        },
+        {
+            "id": "102",
+            "Service area": "Mutur",
+            "district": "14"
+        },
+        {
+            "id": "103",
+            "Service area": "Galgamuwa",
+            "district": "15"
+        },
+        {
+            "id": "104",
+            "Service area": "Nikaweratiya",
+            "district": "15"
+        },
+        {
+            "id": "105",
+            "Service area": "Yapahuwa",
+            "district": "15"
+        },
+        {
+            "id": "106",
+            "Service area": "Hiriyala",
+            "district": "15"
+        },
+        {
+            "id": "107",
+            "Service area": "Wariyapola",
+            "district": "15"
+        },
+        {
+            "id": "108",
+            "Service area": "Panduwasnuwara",
+            "district": "15"
+        },
+        {
+            "id": "109",
+            "Service area": "Bingiriya",
+            "district": "15"
+        },
+        {
+            "id": "110",
+            "Service area": "Katugampola",
+            "district": "15"
+        },
+        {
+            "id": "111",
+            "Service area": "Kuliyapitiya",
+            "district": "15"
+        },
+        {
+            "id": "112",
+            "Service area": "Dambadeniya",
+            "district": "15"
+        },
+        {
+            "id": "113",
+            "Service area": "Polgahawela",
+            "district": "15"
+        },
+        {
+            "id": "114",
+            "Service area": "Kurunegala",
+            "district": "15"
+        },
+        {
+            "id": "115",
+            "Service area": "Mawathagama",
+            "district": "15"
+        },
+        {
+            "id": "116",
+            "Service area": "Dodangaslanda",
+            "district": "15"
+        },
+        {
+            "id": "117",
+            "Service area": "Puttalam",
+            "district": "16"
+        },
+        {
+            "id": "118",
+            "Service area": "Anamaduwa",
+            "district": "16"
+        },
+        {
+            "id": "119",
+            "Service area": "Chillaw",
+            "district": "16"
+        },
+        {
+            "id": "120",
+            "Service area": "Naththandiya",
+            "district": "16"
+        },
+        {
+            "id": "121",
+            "Service area": "Wennappuwa",
+            "district": "16"
+        },
+        {
+            "id": "122",
+            "Service area": "Medawachchiya",
+            "district": "17"
+        },
+        {
+            "id": "123",
+            "Service area": "Horowpathana",
+            "district": "17"
+        },
+        {
+            "id": "124",
+            "Service area": "Anuradhapura East",
+            "district": "17"
+        },
+        {
+            "id": "125",
+            "Service area": "Anuradhapura West",
+            "district": "17"
+        },
+        {
+            "id": "126",
+            "Service area": "Kalawewa",
+            "district": "17"
+        },
+        {
+            "id": "127",
+            "Service area": "Mihinthale",
+            "district": "17"
+        },
+        {
+            "id": "128",
+            "Service area": "Kekirawa",
+            "district": "17"
+        },
+        {
+            "id": "129",
+            "Service area": "Minneriya",
+            "district": "18"
+        },
+        {
+            "id": "130",
+            "Service area": "Medirigiriya",
+            "district": "18"
+        },
+        {
+            "id": "131",
+            "Service area": "Polonnaruwa",
+            "district": "18"
+        },
+        {
+            "id": "132",
+            "Service area": "Mahiyanganaya",
+            "district": "19"
+        },
+        {
+            "id": "133",
+            "Service area": "Viyaluwa",
+            "district": "19"
+        },
+        {
+            "id": "134",
+            "Service area": "Passara",
+            "district": "19"
+        },
+        {
+            "id": "135",
+            "Service area": "Badulla",
+            "district": "19"
+        },
+        {
+            "id": "136",
+            "Service area": "Hali Ela",
+            "district": "19"
+        },
+        {
+            "id": "137",
+            "Service area": "Uva Paranagama",
+            "district": "19"
+        },
+        {
+            "id": "138",
+            "Service area": "Welimada",
+            "district": "19"
+        },
+        {
+            "id": "139",
+            "Service area": "Bandarawela",
+            "district": "19"
+        },
+        {
+            "id": "140",
+            "Service area": "Haputale",
+            "district": "19"
+        },
+        {
+            "id": "141",
+            "Service area": "Bibila",
+            "district": "20"
+        },
+        {
+            "id": "142",
+            "Service area": "Moneragala",
+            "district": "20"
+        },
+        {
+            "id": "143",
+            "Service area": "Wellawaya",
+            "district": "20"
+        },
+        {
+            "id": "144",
+            "Service area": "Eheliyagoda",
+            "district": "21"
+        },
+        {
+            "id": "145",
+            "Service area": "Ratnapura",
+            "district": "21"
+        },
+        {
+            "id": "146",
+            "Service area": "Pelmadulla",
+            "district": "21"
+        },
+        {
+            "id": "147",
+            "Service area": "Balangoda",
+            "district": "21"
+        },
+        {
+            "id": "148",
+            "Service area": "Rakwana",
+            "district": "21"
+        },
+        {
+            "id": "149",
+            "Service area": "Nivithigala",
+            "district": "21"
+        },
+        {
+            "id": "150",
+            "Service area": "Kalawana",
+            "district": "21"
+        },
+        {
+            "id": "151",
+            "Service area": "Kolonna",
+            "district": "21"
+        },
+        {
+            "id": "152",
+            "Service area": "Dedigama",
+            "district": "22"
+        },
+        {
+            "id": "153",
+            "Service area": "Galigamuwa",
+            "district": "22"
+        },
+        {
+            "id": "154",
+            "Service area": "Kegalle",
+            "district": "22"
+        },
+        {
+            "id": "155",
+            "Service area": "Rambukkana",
+            "district": "22"
+        },
+        {
+            "id": "156",
+            "Service area": "Mawanella",
+            "district": "22"
+        },
+        {
+            "id": "157",
+            "Service area": "Aranayaka",
+            "district": "22"
+        },
+        {
+            "id": "158",
+            "Service area": "Yatiyanthota",
+            "district": "22"
+        },
+        {
+            "id": "159",
+            "Service area": "Ruwanwella",
+            "district": "22"
+        },
+        {
+            "id": "160",
+            "Service area": "Deraniyagala",
+            "district": "22"
+        }
+    ],
+    "Districts": [
+        {
+            "id": "1",
+            "district": "Colombo"
+        },
+        {
+            "id": "2",
+            "district": "Gampaha"
+        },
+        {
+            "id": "3",
+            "district": "Kalutara"
+        },
+        {
+            "id": "4",
+            "district": "Mahanuwara"
+        },
+        {
+            "id": "5",
+            "district": "Matale"
+        },
+        {
+            "id": "6",
+            "district": "Nuwara-Eliya"
+        },
+        {
+            "id": "7",
+            "district": "Galle"
+        },
+        {
+            "id": "8",
+            "district": "Matara"
+        },
+        {
+            "id": "9",
+            "district": "Hambantota"
+        },
+        {
+            "id": "10",
+            "district": "Jaffna"
+        },
+        {
+            "id": "11",
+            "district": "Vanni"
+        },
+        {
+            "id": "12",
+            "district": "Batticaloa"
+        },
+        {
+            "id": "13",
+            "district": "Digamadulla"
+        },
+        {
+            "id": "14",
+            "district": "Trincomalee"
+        },
+        {
+            "id": "15",
+            "district": "Kurunegala"
+        },
+        {
+            "id": "16",
+            "district": "Puttalam"
+        },
+        {
+            "id": "17",
+            "district": "Anuradhapura"
+        },
+        {
+            "id": "18",
+            "district": "Polonnaruwa"
+        },
+        {
+            "id": "19",
+            "district": "Badulla"
+        },
+        {
+            "id": "20",
+            "district": "Moneragala"
+        },
+        {
+            "id": "21",
+            "district": "Ratnapura"
+        },
+        {
+            "id": "22",
+            "district": "Kegalle"
+        }
+    ]
+}
