@@ -69,7 +69,7 @@
       "type": "string"
     },
     "orders": {
-      "via": "users_permissions_user",
+      "via": "assigned_user",
       "collection": "orders"
     }
   }
