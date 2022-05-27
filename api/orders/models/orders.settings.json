@@ -34,9 +34,9 @@
       "type": "string"
     },
     "assigned_user": {
+      "via": "orders",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "orders"
+      "model": "user"
     },
     "requested_date": {
       "type": "date"

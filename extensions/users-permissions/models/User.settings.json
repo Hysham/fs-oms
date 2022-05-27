@@ -62,15 +62,17 @@
     "mobile_number": {
       "type": "string"
     },
-    "area": {
-      "type": "string"
-    },
-    "district": {
-      "type": "string"
-    },
     "orders": {
       "via": "assigned_user",
       "collection": "orders"
+    },
+    "area": {
+      "model": "areas",
+      "via": "users"
+    },
+    "district": {
+      "model": "districts",
+      "via": "users"
     }
   }
 }

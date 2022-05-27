@@ -12,18 +12,18 @@ const { parseMultipartData, sanitizeEntity } = require('strapi-utils');
 
 module.exports = async () => {
     const data = require('../../data.json');
-     //data.Districts.forEach(el => {
-     //    strapi.query('districts').create({
-     //        district: el.district
-     //    }).then(d => {
-     //        let serviceAreas = data.Service_Area.filter(a => a.district === `${el.id}`)
-     //        // console.log(serviceAreas)
-     //        serviceAreas.forEach(sarea => {
-     //            strapi.services.areas.create({
-     //                area: sarea["Service area"],
-     //                district: d._id
-     //            })
-     //        })
-     //    })
-     //})
+    // data.Districts.forEach(el => {
+    //     strapi.query('districts').create({
+    //         district: el.district
+    //     }).then(d => {
+    //         let serviceAreas = data.Service_Area.filter(a => a.district === `${el.id}`)
+    //         // console.log(serviceAreas)
+    //         serviceAreas.forEach(sarea => {
+    //             strapi.services.areas.create({
+    //                 area: sarea["Service area"],
+    //                 district: d._id
+    //             })
+    //         })
+    //     })
+    // })
 };

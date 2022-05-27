@@ -18,6 +18,11 @@
     "district": {
       "via": "areas",
       "model": "districts"
+    },
+    "users": {
+      "via": "area",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }
