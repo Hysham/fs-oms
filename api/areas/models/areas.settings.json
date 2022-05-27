@@ -20,7 +20,7 @@
       "model": "districts"
     },
     "users": {
-      "via": "area",
+      "via": "user_area",
       "plugin": "users-permissions",
       "collection": "user"
     }
