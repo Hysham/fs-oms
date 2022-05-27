@@ -69,10 +69,6 @@
     "area": {
       "model": "areas",
       "via": "users"
-    },
-    "district": {
-      "model": "districts",
-      "via": "users"
     }
   }
 }
