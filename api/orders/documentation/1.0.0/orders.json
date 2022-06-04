@@ -611,6 +611,7 @@
           },
           "status": {
             "type": "string",
+            "default": "new",
             "enum": [
               "new",
               "assigned",
@@ -660,6 +661,7 @@
           },
           "status": {
             "type": "string",
+            "default": "new",
             "enum": [
               "new",
               "assigned",
