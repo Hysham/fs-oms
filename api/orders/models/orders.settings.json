@@ -30,9 +30,6 @@
     "reference": {
       "type": "string"
     },
-    "status": {
-      "type": "string"
-    },
     "assigned_user": {
       "via": "orders",
       "plugin": "users-permissions",
@@ -46,6 +43,14 @@
     },
     "completed_date": {
       "type": "date"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "assigned",
+        "completed"
+      ]
     }
   }
 }
