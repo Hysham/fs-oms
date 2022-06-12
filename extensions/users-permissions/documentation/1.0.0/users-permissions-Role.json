@@ -576,6 +576,9 @@
                 "district": {
                   "type": "string"
                 },
+                "notificationToken": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },

@@ -1378,6 +1378,9 @@
                 "type": "string"
               }
             }
+          },
+          "notificationToken": {
+            "type": "string"
           }
         }
       },
@@ -1433,6 +1436,9 @@
             "type": "string"
           },
           "district": {
+            "type": "string"
+          },
+          "notificationToken": {
             "type": "string"
           },
           "created_by": {

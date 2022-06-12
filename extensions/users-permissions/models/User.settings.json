@@ -73,6 +73,9 @@
     "district": {
       "model": "districts",
       "via": "users"
+    },
+    "notificationToken": {
+      "type": "text"
     }
   }
 }
