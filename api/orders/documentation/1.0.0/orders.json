@@ -589,6 +589,9 @@
               "user_area": {
                 "type": "string"
               },
+              "district": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },

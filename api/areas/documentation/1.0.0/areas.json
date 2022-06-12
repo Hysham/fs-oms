@@ -542,6 +542,12 @@
                   "type": "string"
                 }
               },
+              "users": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -602,6 +608,9 @@
                   }
                 },
                 "user_area": {
+                  "type": "string"
+                },
+                "district": {
                   "type": "string"
                 },
                 "created_by": {

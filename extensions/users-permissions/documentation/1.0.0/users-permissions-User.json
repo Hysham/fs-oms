@@ -1344,6 +1344,40 @@
                 "type": "string"
               }
             }
+          },
+          "district": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "district": {
+                "type": "string"
+              },
+              "areas": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "users": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -1396,6 +1430,9 @@
             }
           },
           "user_area": {
+            "type": "string"
+          },
+          "district": {
             "type": "string"
           },
           "created_by": {

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/04/2022 8:27:15 PM"
+    "x-generation-date": "06/12/2022 6:53:40 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3835,6 +3835,12 @@
                   "type": "string"
                 }
               },
+              "users": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -3895,6 +3901,9 @@
                   }
                 },
                 "user_area": {
+                  "type": "string"
+                },
+                "district": {
                   "type": "string"
                 },
                 "created_by": {
@@ -3983,6 +3992,69 @@
               }
             }
           },
+          "users": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "username",
+                "email"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "username": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                },
+                "resetPasswordToken": {
+                  "type": "string"
+                },
+                "confirmationToken": {
+                  "type": "string"
+                },
+                "confirmed": {
+                  "type": "boolean"
+                },
+                "blocked": {
+                  "type": "boolean"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "mobile_number": {
+                  "type": "string"
+                },
+                "orders": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "user_area": {
+                  "type": "string"
+                },
+                "district": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -3995,6 +4067,12 @@
             "type": "string"
           },
           "areas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "users": {
             "type": "array",
             "items": {
               "type": "string"
@@ -4085,6 +4163,9 @@
                 }
               },
               "user_area": {
+                "type": "string"
+              },
+              "district": {
                 "type": "string"
               },
               "created_by": {
@@ -4287,6 +4368,9 @@
                   }
                 },
                 "user_area": {
+                  "type": "string"
+                },
+                "district": {
                   "type": "string"
                 },
                 "created_by": {
@@ -4495,6 +4579,40 @@
                 "type": "string"
               }
             }
+          },
+          "district": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "district": {
+                "type": "string"
+              },
+              "areas": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "users": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -4547,6 +4665,9 @@
             }
           },
           "user_area": {
+            "type": "string"
+          },
+          "district": {
             "type": "string"
           },
           "created_by": {
