@@ -1,8 +1,57 @@
 'use strict';
+const { parseMultipartData, sanitizeEntity } = require('strapi-utils');
+var admin = require('firebase-admin');
+
+var serviceAccount = require("../../../fs-oms-firebase-adminsdk-kjkia-79a3b6a9d9.json");
+
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount)
+});
+
+
+var admin = require('firebase-admin');
 
 /**
  * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#core-controllers)
  * to customize this controller
  */
+module.exports = {
+    /**
+     * Create a record.
+     *
+     * @return {Object}
+     */
 
-module.exports = {};
+    async create(ctx) {
+        let entity;
+        if (ctx.is('multipart')) {
+            const { data, files } = parseMultipartData(ctx);
+            entity = await strapi.services.orders.create(data, { files });
+        } else {
+            entity = await strapi.services.orders.create(ctx.request.body);
+            this.sendPush(entity)
+        }
+        return sanitizeEntity(entity, { model: strapi.models.orders });
+    },
+    async sendPush(ordr) {
+        try {
+            const order = sanitizeEntity(ordr, { model: strapi.models.orders })
+            const users = await strapi.query('user', 'users-permissions').find({ 'district.district': order.district })
+            const userTokens = users.map(e => e.notificationToken)
+            console.log(userTokens)
+            await admin.messaging().sendToDevice(
+                userTokens, // ['token_1', 'token_2', ...]
+                {
+                    notification: {
+                        title: order.name,
+                        body: order.mobile_number
+                    }
+                },
+                {
+                },
+            );
+        } catch (err) {
+            console.log(err)
+        }
+    }
+};
