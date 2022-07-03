@@ -11,19 +11,44 @@ const { parseMultipartData, sanitizeEntity } = require('strapi-utils');
  */
 
 module.exports = async () => {
-    const data = require('../../data.json');
-    // data.Districts.forEach(el => {
-    //     strapi.query('districts').create({
-    //         district: el.district
-    //     }).then(d => {
-    //         let serviceAreas = data.Service_Area.filter(a => a.district === `${el.id}`)
-    //         // console.log(serviceAreas)
-    //         serviceAreas.forEach(sarea => {
-    //             strapi.services.areas.create({
-    //                 area: sarea["Service area"],
-    //                 district: d._id
-    //             })
-    //         })
-    //     })
-    // })
+    // exportOrders()
 };
+
+function exportOrders() {
+    const data = require('../../orders-1656718973486.json');
+
+    data.forEach(order => {
+        strapi.query('orders').create({
+            "status": order.status,
+            "name": order.name,
+            "mobile_number": order.mobile_number,
+            "district": order.district,
+            "area": order.area,
+            "address": order.address,
+            "requested_date": order.requested_date,
+            "published_at": order.published_at,
+            "createdAt": order.createdAt,
+            "updatedAt": order.updatedAt,
+        })
+    })
+}
+
+
+function exportDistrictAreas() {
+    const data = require('../../data.json');
+
+    data.Districts.forEach(el => {
+        strapi.query('districts').create({
+            district: el.district
+        }).then(d => {
+            let serviceAreas = data.Service_Area.filter(a => a.district === `${el.id}`)
+            // console.log(serviceAreas)
+            serviceAreas.forEach(sarea => {
+                strapi.services.areas.create({
+                    area: sarea["Service area"],
+                    district: d._id
+                })
+            })
+        })
+    })
+}

@@ -20,29 +20,43 @@ export const convertToCsv = (data) => {
 class ConvertToCSV {
 
   objectToCSVRow = (dataObject) => {
-    let dataArray = [];
-    for (let o in dataObject) {
-      let innerValue = typeof dataObject[o] == 'undefined' ? '' : dataObject[o].toString();
-      let result = innerValue.replace(/"/g, '""');
-      result = '"' + result + '"';
-      dataArray.push(result);
+    try {
+      let dataArray = [];
+      for (let o in dataObject) {
+        let innerValue = typeof dataObject[o] == 'undefined' ? '' : dataObject[o].toString();
+        let result = innerValue.replace(/"/g, '""');
+        result = '"' + result + '"';
+        dataArray.push(result);
+      }
+      return dataArray.join(',') + '\r\n';
+    } catch (e) {
+      console.log("objectToCSVRow: ", e)
     }
-    return dataArray.join(',') + '\r\n';
+
   }
 
   findByString = (o, s) => {
-    s = s.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
-    s = s.replace(/^\./, ''); // strip a leading dot
-    let a = s.split('.');
-    for (let i = 0, n = a.length; i < n; ++i) {
-      let k = a[i];
-      if (k in o) {
-        o = o[k];
-      } else {
-        return;
+    try {
+      s = s.replace(/\[(\w+)\]/g, '.$1'); // convert indexes to properties
+      s = s.replace(/^\./, ''); // strip a leading dot
+      let a = s.split('.');
+      for (let i = 0, n = a.length; i < n; ++i) {
+        let k = a[i];
+        if (o) {
+          if (k in o) {
+            o = o[k];
+          } else {
+            return;
+          }
+        } else {
+          return;
+        }
       }
+      return o;
+    } catch (e) {
+      console.log("findByString: ", e)
     }
-    return o;
+
   }
 
   pushUnique = (arr, item) => {
@@ -51,34 +65,44 @@ class ConvertToCSV {
   }
 
   getLabels = (name, item, labels) => {
-    if (typeof item == 'object') {
-      for (let index in item) {
-        let thisname = ""
-        if (name != "") thisname = name + ".";
-        thisname += index;
-        this.getLabels(thisname, item[index], labels);
+    try {
+      if (typeof item == 'object') {
+        for (let index in item) {
+          let thisname = ""
+          if (name != "") thisname = name + ".";
+          thisname += index;
+          this.getLabels(thisname, item[index], labels);
+        }
+      } else {
+        this.pushUnique(labels, name);
       }
-    } else {
-      this.pushUnique(labels, name);
+    } catch (e) {
+      console.log("getLabels: ", e)
     }
+
   }
 
   convert = (objArray) => {
-    let array = typeof objArray != 'object' ? JSON.parse(objArray) : objArray;
-    let str = '';
-    let labels = [];
-    for (let i = 0; i < array.length; i++) {
-      this.getLabels("", array[i], labels);
-    }
-    str += this.objectToCSVRow(labels);
-    for (let i = 0; i < array.length; i++) {
-      let line = [];
-      for (let label in labels) {
-        line.push( this.findByString(array[i], labels[label]));
+    try {
+      let array = typeof objArray != 'object' ? JSON.parse(objArray) : objArray;
+      let str = '';
+      let labels = [];
+      for (let i = 0; i < array.length; i++) {
+        this.getLabels("", array[i], labels);
       }
-      str +=  this.objectToCSVRow(line);
+      str += this.objectToCSVRow(labels);
+      for (let i = 0; i < array.length; i++) {
+        let line = [];
+        for (let label in labels) {
+          line.push(this.findByString(array[i], labels[label]));
+        }
+        str += this.objectToCSVRow(line);
+      }
+      return str;
+    } catch (e) {
+      console.log("convert: ", e)
     }
-    return str;
+
   }
 
 }
