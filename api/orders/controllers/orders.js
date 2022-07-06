@@ -28,8 +28,15 @@ module.exports = {
             const { data, files } = parseMultipartData(ctx);
             entity = await strapi.services.orders.create(data, { files });
         } else {
-            entity = await strapi.services.orders.create(ctx.request.body);
-            this.sendPush(entity)
+            const isExist = await strapi.services.orders.findOne({ mobile_number: ctx.request.body.mobile_number });
+            if (!isExist) {
+                entity = await strapi.services.orders.create(ctx.request.body);
+                this.sendPush(entity)
+            } else {
+                return {
+                    "error": "Mobile number already exist"
+                }
+            }
         }
         return sanitizeEntity(entity, { model: strapi.models.orders });
     },
@@ -39,17 +46,20 @@ module.exports = {
             const users = await strapi.query('user', 'users-permissions').find({ 'district.district': order.district })
             const userTokens = users.map(e => e.notificationToken)
             console.log(userTokens)
-            await admin.messaging().sendToDevice(
-                userTokens, // ['token_1', 'token_2', ...]
-                {
-                    notification: {
-                        title: order.name,
-                        body: order.mobile_number
-                    }
-                },
-                {
-                },
-            );
+            if (userTokens.length) {
+                await admin.messaging().sendToDevice(
+                    userTokens, // ['token_1', 'token_2', ...]
+                    {
+                        notification: {
+                            title: order.name,
+                            body: order.mobile_number
+                        }
+                    },
+                    {
+                    },
+                );
+            }
+
         } catch (err) {
             console.log(err)
         }
