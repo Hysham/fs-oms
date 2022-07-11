@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/12/2022 1:48:37 PM"
+    "x-generation-date": "07/11/2022 11:03:53 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3900,14 +3900,20 @@
                     "type": "string"
                   }
                 },
-                "user_area": {
-                  "type": "string"
-                },
                 "district": {
                   "type": "string"
                 },
                 "notificationToken": {
                   "type": "string"
+                },
+                "areas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "jobs": {
+                  "type": "integer"
                 },
                 "created_by": {
                   "type": "string"
@@ -4043,14 +4049,20 @@
                     "type": "string"
                   }
                 },
-                "user_area": {
-                  "type": "string"
-                },
                 "district": {
                   "type": "string"
                 },
                 "notificationToken": {
                   "type": "string"
+                },
+                "areas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "jobs": {
+                  "type": "integer"
                 },
                 "created_by": {
                   "type": "string"
@@ -4168,14 +4180,20 @@
                   "type": "string"
                 }
               },
-              "user_area": {
-                "type": "string"
-              },
               "district": {
                 "type": "string"
               },
               "notificationToken": {
                 "type": "string"
+              },
+              "areas": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "jobs": {
+                "type": "integer"
               },
               "created_by": {
                 "type": "string"
@@ -4376,14 +4394,20 @@
                     "type": "string"
                   }
                 },
-                "user_area": {
-                  "type": "string"
-                },
                 "district": {
                   "type": "string"
                 },
                 "notificationToken": {
                   "type": "string"
+                },
+                "areas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "jobs": {
+                  "type": "integer"
                 },
                 "created_by": {
                   "type": "string"
@@ -4561,37 +4585,6 @@
               }
             }
           },
-          "user_area": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "area": {
-                "type": "string"
-              },
-              "district": {
-                "type": "string"
-              },
-              "users": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "district": {
             "required": [
               "id"
@@ -4628,6 +4621,44 @@
           },
           "notificationToken": {
             "type": "string"
+          },
+          "areas": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "area": {
+                  "type": "string"
+                },
+                "district": {
+                  "type": "string"
+                },
+                "users": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "jobs": {
+            "type": "integer",
+            "default": 5
           }
         }
       },
@@ -4679,14 +4710,21 @@
               "type": "string"
             }
           },
-          "user_area": {
-            "type": "string"
-          },
           "district": {
             "type": "string"
           },
           "notificationToken": {
             "type": "string"
+          },
+          "areas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "jobs": {
+            "type": "integer",
+            "default": 5
           },
           "created_by": {
             "type": "string"

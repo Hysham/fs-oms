@@ -570,14 +570,20 @@
                     "type": "string"
                   }
                 },
-                "user_area": {
-                  "type": "string"
-                },
                 "district": {
                   "type": "string"
                 },
                 "notificationToken": {
                   "type": "string"
+                },
+                "areas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "jobs": {
+                  "type": "integer"
                 },
                 "created_by": {
                   "type": "string"

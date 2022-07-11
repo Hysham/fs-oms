@@ -66,16 +66,21 @@
       "via": "assigned_user",
       "collection": "orders"
     },
-    "user_area": {
-      "model": "areas",
-      "via": "users"
-    },
     "district": {
       "model": "districts",
       "via": "users"
     },
     "notificationToken": {
       "type": "text"
+    },
+    "areas": {
+      "collection": "areas",
+      "via": "users",
+      "dominant": true
+    },
+    "jobs": {
+      "type": "integer",
+      "default": 5
     }
   }
 }

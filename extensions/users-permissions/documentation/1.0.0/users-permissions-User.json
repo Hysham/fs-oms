@@ -1314,37 +1314,6 @@
               }
             }
           },
-          "user_area": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "area": {
-                "type": "string"
-              },
-              "district": {
-                "type": "string"
-              },
-              "users": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "district": {
             "required": [
               "id"
@@ -1381,6 +1350,44 @@
           },
           "notificationToken": {
             "type": "string"
+          },
+          "areas": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "area": {
+                  "type": "string"
+                },
+                "district": {
+                  "type": "string"
+                },
+                "users": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "jobs": {
+            "type": "integer",
+            "default": 5
           }
         }
       },
@@ -1432,14 +1439,21 @@
               "type": "string"
             }
           },
-          "user_area": {
-            "type": "string"
-          },
           "district": {
             "type": "string"
           },
           "notificationToken": {
             "type": "string"
+          },
+          "areas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "jobs": {
+            "type": "integer",
+            "default": 5
           },
           "created_by": {
             "type": "string"
