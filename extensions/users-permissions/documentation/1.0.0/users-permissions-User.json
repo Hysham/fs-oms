@@ -1302,6 +1302,9 @@
                     "completed"
                   ]
                 },
+                "serial_number": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },

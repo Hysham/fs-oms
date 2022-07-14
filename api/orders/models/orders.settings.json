@@ -52,6 +52,9 @@
         "completed"
       ],
       "default": "new"
+    },
+    "serial_number": {
+      "type": "string"
     }
   }
 }
