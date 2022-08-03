@@ -51,8 +51,8 @@ module.exports = {
                     userTokens, // ['token_1', 'token_2', ...]
                     {
                         notification: {
-                            title: order.name,
-                            body: order.mobile_number
+                            title: `${order.name} - ${order.mobile_number}`,
+                            body: `At ${order.area}`
                         }
                     },
                     {
