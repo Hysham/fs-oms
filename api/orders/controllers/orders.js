@@ -43,7 +43,7 @@ module.exports = {
     async sendPush(ordr) {
         try {
             const order = sanitizeEntity(ordr, { model: strapi.models.orders })
-            const users = await strapi.query('user', 'users-permissions').find({ 'district.district': order.district })
+            const users = await strapi.query('user', 'users-permissions').find({ 'areas.areas': order.area })
             const userTokens = users.map(e => e.notificationToken)
             console.log(userTokens)
             if (userTokens.length) {
